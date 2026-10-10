@@ -5,10 +5,12 @@ public class Conta {
 
     String usuario;
     int senha;
+    float saldo;
 
-    public Conta(String usuario, int senha){
+    public Conta(String usuario, int senha, float saldo){
         this.usuario = usuario;
         this.senha = senha;
+        this.saldo = saldo;
     }
 
     public void entradaUserSenha(){
@@ -17,10 +19,14 @@ public class Conta {
 
         System.out.print("Qual é sua senha (Apenas numeros, Senha Com 6 Numeros): ");
         this.senha = sc.nextInt();
+
+        System.out.print("Quantos de saldo tem na conta: ");
+        this.saldo = sc.nextFloat();
+
     }
 
     public static void main(String[] args) {
-        Conta conta1 = new Conta(null, 0);
+        Conta conta1 = new Conta(null, 0, 0);
         conta1.entradaUserSenha();
 
     
