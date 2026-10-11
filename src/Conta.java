@@ -5,9 +5,9 @@ public class Conta {
 
     String usuario;
     int senha;
-    float saldo;
+    double saldo;
 
-    public Conta(String usuario, int senha, float saldo){
+    public Conta(String usuario, int senha, double saldo){
         this.usuario = usuario;
         this.senha = senha;
         this.saldo = saldo;
@@ -21,7 +21,8 @@ public class Conta {
         this.senha = sc.nextInt();
 
         System.out.print("Quantos de saldo tem na conta: ");
-        this.saldo = sc.nextFloat();
+        this.saldo = sc.nextDouble();
 
     }
+    
 }
